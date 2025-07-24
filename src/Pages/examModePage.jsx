@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import PointCounter from '../Buttons/pointCounter';
 import SidebarButtons from '../Buttons/sidebarButtons';
 import CustomPdfJsViewer from '../CustomPdfJsViewer';
-import { getSolutionPdfFullExam, fullExams_Questions } from '../Handlers/pdfHandler';
+import { getSolutionPdfForFullExam, fullExams_Questions } from '../Handlers/pdfHandler';
 import '../style.css';
 
 function ExamModePage() {
