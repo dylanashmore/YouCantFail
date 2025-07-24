@@ -6,7 +6,8 @@ import HistoryButton from './Buttons/historyButton';
 import SidebarButtons from './Buttons/sidebarButtons';
 import { getSolutionPdfForQuestion, TOPIC_PDFS } from './Handlers/pdfHandler';
 import CustomPdfJsViewer from './CustomPdfJsViewer';
-import ExamModePage from './examMode/examModePage';
+import ExamModePage from './Pages/examModePage';
+import AboutPage from './Pages/AboutPage';
 
 function MainPage() {
   const [isRunning, setIsRunning] = useState(false);
@@ -183,6 +184,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/exam-mode" element={<ExamModePage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   );
