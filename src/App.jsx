@@ -8,6 +8,8 @@ import { getSolutionPdfForQuestion, TOPIC_PDFS } from './Handlers/pdfHandler';
 import CustomPdfJsViewer from './CustomPdfJsViewer';
 import ExamModePage from './Pages/examModePage';
 import AboutPage from './Pages/AboutPage';
+import PointCounter from './Buttons/pointCounter';
+
 
 function MainPage() {
   const [isRunning, setIsRunning] = useState(false);
@@ -130,6 +132,7 @@ function MainPage() {
           </div>
         </div>
         <div className="right-section">
+          <PointCounter />
           {!hasEnded ? (
             <>
               <button onClick={isRunning ? handlePause : handleResume}>

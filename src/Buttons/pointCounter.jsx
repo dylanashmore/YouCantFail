@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import '../style.css';
 
 const PointCounter = () => {
   const [open, setOpen] = useState(false);
